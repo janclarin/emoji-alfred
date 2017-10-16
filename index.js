@@ -7,9 +7,14 @@ const emojiEntries = Object.entries(emoji.lib);
 function toAlfredResult(emojiEntry) {
 	const key = emojiEntry[0];
 	const emojiObj = emojiEntry[1];
+	const emojiChar = emojiObj.char;
 	return {
-		title: emojiObj.char,
-		subtitle: key
+		title: emojiChar,
+		subtitle: key.replace(/_/g, ' '),
+		text: {
+			copy: emojiChar,
+			largetype: emojiChar
+		}
 	};
 }
 
