@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>name</key>
-	<string>emoji-alfred-workflow</string>
 	<key>bundleid</key>
 	<string>com.janclarin.emoji-alfred-workflow</string>
 	<key>category</key>
@@ -24,8 +22,14 @@
 			</dict>
 		</array>
 	</dict>
+	<key>createdby</key>
+	<string>Jan Clarin</string>
+	<key>description</key>
+	<string>Search for emojis to copy and paste.</string>
 	<key>disabled</key>
 	<false/>
+	<key>name</key>
+	<string>emoji-alfred-workflow</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -52,6 +56,10 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -63,7 +71,7 @@
 				<key>queuedelayimmediatelyinitially</key>
 				<true/>
 				<key>queuedelaymode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>queuemode</key>
 				<integer>2</integer>
 				<key>runningsubtext</key>
@@ -81,7 +89,7 @@
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -95,13 +103,6 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>BB28E8C3-B235-4A9D-A579-4100035BB371</key>
-		<dict>
-			<key>xpos</key>
-			<integer>150</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
 		<key>3C1B2103-C843-49A5-A225-2AE022BA5BAD</key>
 		<dict>
 			<key>xpos</key>
@@ -109,6 +110,15 @@
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
+		<key>BB28E8C3-B235-4A9D-A579-4100035BB371</key>
+		<dict>
+			<key>xpos</key>
+			<integer>150</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
 	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/janclarin/emoji-alfred-workflow</string>
 </dict>
 </plist>
