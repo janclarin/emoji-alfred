@@ -34,5 +34,10 @@ function getMatches(query) {
 	});
 }
 
-const matches = getMatches(alfy.input);
-alfy.output(matches.map(toAlfredResult));
+const query = alfy.input;
+const matches = getMatches(query);
+if (matches.length > 0) {
+	alfy.output(matches.map(toAlfredResult));
+} else {
+	alfy.error('No emoji matches for query, ' + query);
+}
