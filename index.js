@@ -4,10 +4,6 @@ const emoji = require('emojilib');
 
 const emojiEntries = Object.entries(emoji.lib);
 
-function sanitize(input) {
-	return input.trim();
-}
-
 function toAlfredResult(emojiEntry) {
 	const key = emojiEntry[0];
 	const emojiObj = emojiEntry[1];
@@ -33,6 +29,5 @@ function getMatches(query) {
 	});
 }
 
-const query = sanitize(alfy.input);
-const matches = getMatches(query);
+const matches = getMatches(alfy.input);
 alfy.output(matches.map(toAlfredResult));
