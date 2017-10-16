@@ -22,15 +22,11 @@ function isMatch(str, query) {
 	return str.startsWith(query);
 }
 
-function isEmojiObjMatch(emojiObj, query) {
-	return emojiObj.keywords.some(keyword => isMatch(keyword, query));
-}
-
 function getMatches(query) {
 	return emojiEntries.filter(entry => {
 		const key = entry[0];
-		const emojiObj = entry[1];
-		return isMatch(key, query) || isEmojiObjMatch(emojiObj, query);
+		const keywords = entry[1].keywords;
+		return isMatch(key, query) || keywords.some(word => isMatch(word, query));
 	});
 }
 
