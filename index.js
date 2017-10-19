@@ -11,6 +11,7 @@ function toAlfredResult(emojiEntry) {
 	return {
 		title: emojiChar,
 		subtitle: convertUnderscoresToSpaces(key),
+		arg: emojiChar,
 		text: {
 			copy: emojiChar,
 			largetype: emojiChar

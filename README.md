@@ -10,12 +10,13 @@ using keywords so you can copy and paste them into your favorite apps.
   [Powerpack](https://www.alfredapp.com/powerpack/) upgrade
 
 ## Installation
-Run `npm install -g emoji-alfred-workflow` in your terminal. After a few
+Run `npm install --global emoji-alfred-workflow` in your terminal. After a few
 seconds, try using it.
 
 ## Usage
-1. Type `:` followed by the search term, e.g. `:love`.
-2. Press <kbd>&#8984;</kbd><kbd>C</kbd> on the desired selection
+1. Type `:` followed by the search term, e.g. `:love`
+2. Press <kbd>Enter</kbd> on your selection
+3. Paste the emoji anywhere!
 
 # Updates
 An Alfred update result will appear when there is an update.

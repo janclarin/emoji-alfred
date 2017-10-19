@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>BB28E8C3-B235-4A9D-A579-4100035BB371</string>
+				<string>6DFDC857-35D5-4DA0-9C5F-2CC4EA3F965D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -32,25 +32,6 @@
 	<string>emoji-alfred-workflow</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>BB28E8C3-B235-4A9D-A579-4100035BB371</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -98,6 +79,23 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>6DFDC857-35D5-4DA0-9C5F-2CC4EA3F965D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -110,7 +108,7 @@
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
-		<key>BB28E8C3-B235-4A9D-A579-4100035BB371</key>
+		<key>6DFDC857-35D5-4DA0-9C5F-2CC4EA3F965D</key>
 		<dict>
 			<key>xpos</key>
 			<integer>150</integer>
