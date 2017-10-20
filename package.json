@@ -1,6 +1,6 @@
 {
   "name": "emoji-alfred-workflow",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An Alfred workflow to easily search for emojis using keywords so you can copy and paste them into your favorite apps.",
   "repository": "janclarin/emoji-alfred-workflow",
   "author": {
