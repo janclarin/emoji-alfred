@@ -3,6 +3,9 @@ const alfy = require('alfy');
 const emoji = require('emojilib');
 
 const emojiEntries = Object.entries(emoji.lib);
+const noMatchesAlfredResult = {
+	title: 'No emoji matches for ' + alfy.input
+};
 
 function toAlfredResult(emojiEntry) {
 	const key = emojiEntry[0];
@@ -47,5 +50,5 @@ const matches = getMatches(query);
 if (matches.length > 0) {
 	alfy.output(matches.map(toAlfredResult));
 } else {
-	alfy.error('No emoji matches for query, ' + query);
+	alfy.output([noMatchesAlfredResult]);
 }
