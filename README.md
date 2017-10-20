@@ -2,7 +2,7 @@
 An [Alfred](https://www.alfredapp.com/) workflow to easily search for emojis
 using keywords so you can copy and paste them into your favorite apps.
 
-<img src="https://user-images.githubusercontent.com/2449384/31757391-ac2346f8-b45d-11e7-8097-7ad307e1c09e.gif" width="480">
+<img src="https://user-images.githubusercontent.com/2449384/31804414-1302a80e-b50e-11e7-952e-309fc0abc8f3.gif" width="480">
 
 ## Requirements
 - [Node.js](https://nodejs.org/)
