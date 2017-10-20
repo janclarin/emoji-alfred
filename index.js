@@ -8,12 +8,10 @@ const noMatchesAlfredResult = {
 };
 
 function toAlfredResult(emojiEntry) {
-	const key = emojiEntry[0];
 	const emojiObj = emojiEntry[1];
 	const emojiChar = emojiObj.char;
 	return {
 		title: emojiChar,
-		subtitle: convertUnderscoresToSpaces(key),
 		arg: emojiChar,
 		text: {
 			copy: emojiChar,
@@ -29,10 +27,6 @@ function convertSpacesToUnderscores(str) {
 	return str.replace(/ +/g, '_');
 }
 
-function convertUnderscoresToSpaces(str) {
-	return str.replace(/_/g, ' ');
-}
-
 function isMatch(str, query) {
 	return str.startsWith(query);
 }
@@ -46,9 +40,9 @@ function getMatches(query) {
 }
 
 const query = convertSpacesToUnderscores(alfy.input);
-const matches = getMatches(query);
+const matches = getMatches(query).map(toAlfredResult);
 if (matches.length > 0) {
-	alfy.output(matches.map(toAlfredResult));
+	alfy.output(matches);
 } else {
 	alfy.output([noMatchesAlfredResult]);
 }
