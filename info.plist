@@ -25,13 +25,30 @@
 	<key>createdby</key>
 	<string>Jan Clarin</string>
 	<key>description</key>
-	<string>Search for emojis to copy and paste.</string>
+	<string>An Alfred workflow to easily search for emojis using keywords so you can copy and paste them into your favorite apps.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>emoji-alfred-workflow</string>
+	<string>Emoji</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>6DFDC857-35D5-4DA0-9C5F-2CC4EA3F965D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -79,23 +96,6 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>6DFDC857-35D5-4DA0-9C5F-2CC4EA3F965D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -116,7 +116,9 @@
 			<integer>10</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>1.0.6</string>
 	<key>webaddress</key>
-	<string>https://github.com/janclarin/emoji-alfred-workflow</string>
+	<string>https://github.com/janclarin/emoji-alfred-workflow#readme</string>
 </dict>
 </plist>

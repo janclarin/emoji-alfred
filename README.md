@@ -16,10 +16,13 @@ seconds, try using it.
 ## Usage
 1. Type `:` followed by the search term, e.g. `:love`
 2. Press <kbd>Enter</kbd> on your selection
-3. Paste the emoji anywhere!
+
+Pressing <kbd>Enter</kbd> will automatically paste the emoji to where you were
+typing!
 
 # Updates
-An Alfred update result will appear when there is an update.
+An Alfred update result will appear when there is an update. Select it to
+update this workflow.
 
 ## Credits
 Powered by [emojilib](https://github.com/muan/emojilib) for the emoji keyword
